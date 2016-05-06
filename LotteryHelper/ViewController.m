@@ -17,6 +17,7 @@
     [viewLayer setBackgroundColor:CGColorCreateGenericRGB(255.0/255.0, 139.0/255.0, 216.0/255.0, 1.0)]; //RGB plus Alpha Channel
     [self.view setWantsLayer:YES]; // view's backing store is using a Core Animation Layer
     [self.view setLayer:viewLayer];
+    [self.number_1 becomeFirstResponder];
 }
 
 - (void)controlTextDidChange:(NSNotification *)notification {

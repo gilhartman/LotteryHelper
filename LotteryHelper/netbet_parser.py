@@ -27,6 +27,10 @@ def does_block_match(blockDict, main_number, numbers_list):
     return general_winner, extra_number_winner
 
 
+def print_tickets(tickets_list):
+    for i in tickets_list:
+            print "Ticket %s - Row %s" % (i[0], i[1])
+
 def main():
     args = parse_args()
     if not os.path.exists(args.input_file):
@@ -34,8 +38,14 @@ def main():
         sys.exit(1)
 
     if args.main_number in args.list:
-        print "Main number should not be part of list"
+        print "Extra number should not be part of list"
         sys.exit(1)
+
+    if len(set(args.list)) != len(args.list):
+        print "Winning numbers should not have the same number twice"
+        sys.exit(1)
+
+    print "Results for winning numbers %s and extra number %d:" % (args.list, args.main_number)
 
     tree = ET.parse(args.input_file)
     root = tree.getroot()
@@ -57,11 +67,9 @@ def main():
             regular_tickets += ticket_extra_number_winners[:]
 
     print "Non winning tickets\n==============="
-    for i in regular_tickets:
-        print "Ticket %s - Row %s" % (i[0], i[1])
+    print_tickets(regular_tickets)
     print "\nWinning tickets\n============"
-    for i in winning_tickets:
-        print "Ticket %s - Row %s" % (i[0], i[1])
+    print_tickets(winning_tickets)
 
 
 if __name__ == "__main__":

@@ -13,6 +13,7 @@
 		2B364E1C1CD7A7730099A8D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B364E1B1CD7A7730099A8D4 /* Assets.xcassets */; };
 		2B364E1F1CD7A7730099A8D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B364E1D1CD7A7730099A8D4 /* Main.storyboard */; };
 		2B364E271CD7B1C80099A8D4 /* netbet_parser.py in Resources */ = {isa = PBXBuildFile; fileRef = 2B364E261CD7B1C80099A8D4 /* netbet_parser.py */; };
+		2BF39F3B1CDCBD070098A385 /* ball-trans.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BF39F3A1CDCBD070098A385 /* ball-trans.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2B364E1E1CD7A7730099A8D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B364E201CD7A7730099A8D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B364E261CD7B1C80099A8D4 /* netbet_parser.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = netbet_parser.py; sourceTree = "<group>"; };
+		2BF39F3A1CDCBD070098A385 /* ball-trans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ball-trans.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		2B364E111CD7A7730099A8D4 /* LotteryHelper */ = {
 			isa = PBXGroup;
 			children = (
+				2BF39F3A1CDCBD070098A385 /* ball-trans.png */,
 				2B364E261CD7B1C80099A8D4 /* netbet_parser.py */,
 				2B364E121CD7A7730099A8D4 /* AppDelegate.h */,
 				2B364E131CD7A7730099A8D4 /* AppDelegate.m */,
@@ -136,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BF39F3B1CDCBD070098A385 /* ball-trans.png in Resources */,
 				2B364E1C1CD7A7730099A8D4 /* Assets.xcassets in Resources */,
 				2B364E271CD7B1C80099A8D4 /* netbet_parser.py in Resources */,
 				2B364E1F1CD7A7730099A8D4 /* Main.storyboard in Resources */,
